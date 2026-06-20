@@ -20,9 +20,9 @@ DNA 서열 분석 프로그램입니다.
 
 ```
 rosalind-solver-BIO-Data/
-├── app.py            # Streamlit 웹앱 (브라우저에서 사용)
-├── dna_analyzer.py   # CLI 프로그램 (터미널에서 사용)
-└── requirements.txt  # 필요한 패키지 목록
+├── rosalind_bio_solver.py     # Streamlit 웹앱 (브라우저에서 사용)
+├── rosalind_dna_analyzer.py   # CLI 프로그램 (터미널에서 사용)
+└── requirements.txt           # 필요한 패키지 목록
 ```
 
 ---
@@ -38,7 +38,7 @@ pip install streamlit pdfplumber
 ### 2-A. 웹앱으로 실행 (추천)
 
 ```bash
-streamlit run app.py
+streamlit run rosalind_bio_solver.py
 ```
 
 브라우저에서 `http://localhost:8501` 자동으로 열림  
@@ -48,10 +48,10 @@ streamlit run app.py
 
 ```bash
 # 서열 직접 입력
-python dna_analyzer.py --seq ATAGATCACGTAGT
+python rosalind_dna_analyzer.py --seq ATAGATCACGTAGT
 
 # 파일로 입력
-python dna_analyzer.py --file my_sequence.txt
+python rosalind_dna_analyzer.py --file my_sequence.txt
 ```
 
 ---
